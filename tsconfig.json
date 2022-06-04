@@ -1,0 +1,24 @@
+{
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.d.ts",
+    "**/*.js",
+    "**/*.mjs",
+    "**/*.cjs"
+  ],
+  "exclude": [".cache/**/*", "build/**/*", "node_modules/**/*"],
+  "compilerOptions": {
+    "checkJs": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "target": "ES2017",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    }
+  }
+}

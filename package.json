@@ -1,0 +1,51 @@
+{
+  "name": "remix-webpack-cli",
+  "version": "0.0.12",
+  "keywords": [
+    "remix",
+    "compiler",
+    "webpack",
+    "cli"
+  ],
+  "author": "Jacob Ebey",
+  "license": "ISC",
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "bin": {
+    "remix-webpack": "./bin/cli.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "debounce-queue": "^0.4.0",
+    "esbuild": "^0.14.42",
+    "esbuild-loader": "^2.19.0",
+    "get-port": "^6.1.2",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "remix-flat-routes": "^0.4.2",
+    "tsconfig": "^7.0.0",
+    "tsconfig-paths-webpack-plugin": "^3.5.2",
+    "webpack": "^5.73.0",
+    "webpack-merge": "^5.8.0",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-virtual-modules": "^0.4.3"
+  },
+  "scripts": {
+    "build": "node ./bin/cli.js build",
+    "dev": "node ./bin/cli.js dev",
+    "start": "remix-serve build"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "0.0.0-experimental-9784dd06",
+    "@remix-run/node": "0.0.0-experimental-9784dd06",
+    "@remix-run/react": "0.0.0-experimental-9784dd06",
+    "@remix-run/serve": "0.0.0-experimental-9784dd06",
+    "@remix-run/server-runtime": "0.0.0-experimental-9784dd06",
+    "@types/webpack-node-externals": "^2.5.3",
+    "isbot": "^3.5.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-router-dom": "^6.4.0-pre.2"
+  }
+}
