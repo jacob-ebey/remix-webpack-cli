@@ -1,6 +1,6 @@
 {
   "name": "remix-webpack-cli",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "type": "module",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "@remix-run/dev": "0.0.0-experimental-9784dd06",
     "@remix-run/node": "0.0.0-experimental-9784dd06",
     "@remix-run/react": "0.0.0-experimental-9784dd06",
-    "@remix-run/serve": "0.0.0-experimental-9784dd06",
+    "@remix-run/express": "0.0.0-experimental-9784dd06",
     "@remix-run/server-runtime": "0.0.0-experimental-9784dd06",
     "@types/webpack-node-externals": "^2.5.3",
     "isbot": "^3.5.0",
