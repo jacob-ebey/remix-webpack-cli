@@ -1,6 +1,7 @@
 {
   "name": "remix-webpack-cli",
   "version": "0.0.13",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/jacob-ebey/remix-webpack-cli"
@@ -18,7 +19,7 @@
     "lib"
   ],
   "bin": {
-    "remix-webpack": "./bin/cli.js"
+    "remix-webpack": "./bin/cli.cjs"
   },
   "dependencies": {
     "chokidar": "^3.5.3",
@@ -36,9 +37,9 @@
     "webpack-virtual-modules": "^0.4.3"
   },
   "scripts": {
-    "build": "node ./bin/cli.js build",
-    "dev": "node ./bin/cli.js dev",
-    "start": "remix-serve build"
+    "build": "node ./bin/cli.cjs build",
+    "dev": "node ./bin/cli.cjs dev",
+    "start": "remix-serve build/index.cjs"
   },
   "devDependencies": {
     "@remix-run/dev": "0.0.0-experimental-9784dd06",

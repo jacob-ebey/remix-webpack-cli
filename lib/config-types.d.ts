@@ -1,3 +1,4 @@
+import webpack from "webpack";
 import type { Configuration } from "webpack";
 import type { RemixConfig } from "@remix-run/dev/config";
 
@@ -9,15 +10,17 @@ export interface RemixWebpackConfig {
   entryClientFile: string;
   entryServerFile: string;
   mode: "development" | "production";
+  type?: "module";
   publicPath: string;
   rootDirectory: string;
   routes: RemixConfig["routes"];
   serverBuildPath: string;
   webpack?: (
     config: Configuration,
-    {
-      buildFor,
-      mode,
-    }: { buildFor: "client" | "server"; mode: "development" | "production" }
+    args: {
+      buildFor: "client" | "server";
+      mode: "development" | "production";
+      webpack: typeof webpack;
+    }
   ) => Promise<Configuration> | Configuration;
 }
