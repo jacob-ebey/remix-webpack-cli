@@ -1,6 +1,10 @@
 {
   "name": "remix-webpack-cli",
-  "version": "0.0.12",
+  "version": "0.0.13",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jacob-ebey/remix-webpack-cli"
+  },
   "keywords": [
     "remix",
     "compiler",
