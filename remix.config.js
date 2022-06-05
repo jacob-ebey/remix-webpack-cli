@@ -4,6 +4,8 @@
  * @type {Partial<import("./lib/config-types").RemixWebpackConfig>}
  */
 let config = {
+  // serverBuildPath: "build/index.cjs",
+  // type: "commonjs",
   webpack: (config, { buildFor, webpack }) => {
     // if (buildFor === "client") {
     //   config.plugins = config.plugins || [];

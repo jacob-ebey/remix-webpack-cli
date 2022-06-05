@@ -10,7 +10,7 @@ export interface RemixWebpackConfig {
   entryClientFile: string;
   entryServerFile: string;
   mode: "development" | "production";
-  type?: "module";
+  type?: "module" | "commonjs";
   publicPath: string;
   rootDirectory: string;
   routes: RemixConfig["routes"];
