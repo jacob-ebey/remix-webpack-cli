@@ -1,6 +1,6 @@
 {
   "name": "remix-webpack-cli",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "type": "module",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
     "webpack-node-externals": "^3.0.0",
     "webpack-sources": "^3.2.3",
     "webpack-virtual-modules": "^0.4.3",
-    "ws": "^8.7.0"
+    "ws": "^7.5.8"
   },
   "scripts": {
     "postinstall": "patch-package",
