@@ -3,7 +3,6 @@ import type { MetaFunction } from "@remix-run/node";
 import {
   Link,
   Links,
-  LiveReload,
   Meta,
   Outlet,
   Scripts,
@@ -83,7 +82,6 @@ export default function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        {process.env.NODE_ENV === "development" ? <LiveReload /> : null}
       </body>
     </html>
   );

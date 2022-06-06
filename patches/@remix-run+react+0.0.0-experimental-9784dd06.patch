@@ -1,0 +1,13 @@
+diff --git a/node_modules/@remix-run/react/esm/routeModules.js b/node_modules/@remix-run/react/esm/routeModules.js
+index fabe95d..6bb001b 100644
+--- a/node_modules/@remix-run/react/esm/routeModules.js
++++ b/node_modules/@remix-run/react/esm/routeModules.js
+@@ -75,7 +75,7 @@ async function loadRouteModule(route, routeModulesCache) {
+   }
+ 
+   try {
+-    let routeModule = await import(route.module);
++    let routeModule = await import(/* webpackIgnore: true */ route.module);
+     routeModulesCache[route.id] = routeModule;
+     return routeModule;
+   } catch (error) {
