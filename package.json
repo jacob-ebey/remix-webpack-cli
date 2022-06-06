@@ -1,8 +1,7 @@
 {
   "name": "remix-webpack-cli",
-  "version": "0.0.19",
+  "version": "0.0.22",
   "type": "module",
-  "main": "components.cjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/jacob-ebey/remix-webpack-cli"
@@ -42,7 +41,8 @@
     "webpack-merge": "^5.8.0",
     "webpack-node-externals": "^3.0.0",
     "webpack-sources": "^3.2.3",
-    "webpack-virtual-modules": "^0.4.3"
+    "webpack-virtual-modules": "^0.4.3",
+    "ws": "^8.7.0"
   },
   "scripts": {
     "postinstall": "patch-package",
@@ -60,6 +60,7 @@
     "@types/deep-equal": "^1.0.1",
     "@types/node": "^17.0.39",
     "@types/webpack-node-externals": "^2.5.3",
+    "@types/ws": "^8.5.3",
     "isbot": "^3.5.0",
     "patch-package": "^6.4.7",
     "react": "^18.1.0",
