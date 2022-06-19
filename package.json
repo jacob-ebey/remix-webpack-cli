@@ -1,6 +1,6 @@
 {
   "name": "remix-webpack-cli",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "type": "module",
   "repository": {
     "type": "git",
@@ -45,7 +45,7 @@
     "ws": "^7.5.8"
   },
   "scripts": {
-    "postinstall": "patch-package",
+    "patch": "patch-package",
     "build": "node ./bin/cli.cjs build",
     "dev": "node ./bin/cli.cjs dev",
     "start": "remix-serve build/index.cjs"
